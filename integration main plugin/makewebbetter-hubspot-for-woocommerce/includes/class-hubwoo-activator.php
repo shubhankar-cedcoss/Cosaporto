@@ -46,11 +46,6 @@ if ( ! class_exists( 'Hubwoo_Activator' ) ) {
 
 				wp_schedule_event( time(), 'mwb-hubwoo-check-deals-5min', 'hubwoo_deals_sync_check' );
 			}
-
-			if ( ! wp_next_scheduled( 'hubwoo_custom_company_properties' ) ) {
-
-				wp_schedule_event( time(), 'mwb-hubwoo-check-company-5min', 'hubwoo_custom_company_properties' );
-			}
 		}
 	}
 }
